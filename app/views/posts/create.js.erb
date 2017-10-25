@@ -1,0 +1,9 @@
+<% if @post.valid? %>
+
+	$(".show-post").append("<%= j render "form_post", post: @post %>")
+
+<% else %>
+
+	$(".error-wraper").html("<%= j render "form_error", post: @post %>")
+
+<% end  %>

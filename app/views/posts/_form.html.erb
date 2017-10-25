@@ -1,0 +1,17 @@
+<%= form_with(model: post) do |form| %>
+  <div class="error-wraper">
+    <% if post.errors.any? %>
+
+      <%= render "form_error", post: @post %>
+    
+    <% end %>
+  </div>  
+  <div class="field">
+    <%= form.label :comment %>
+    <%= form.text_area :comment, id: :post_comment, placeholder: "Comments...", cols: "50", rows: "10" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
