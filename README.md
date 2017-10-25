@@ -1,24 +1,38 @@
 # README
+*Hello, Wold!*
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Ajaxify your site with remote => true using Rails 5.1 
 
-Things you may want to cover:
+## Vanilla CSS & Jquery
+
+
+
+
+
 
 * Ruby version
+	2.3.3
 
-* System dependencies
+* Rails Version
+	5.1.4
 
-* Configuration
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
+Don't fogert to remove the line ```ruby
+ (local: true)
 
-* Services (job queues, cache servers, search engines, etc.)
+``` from the form_with.
 
-* Deployment instructions
 
-* ...
+```ruby
+<%= form_with(model: post, local: true) do |form| %>
+
+```
+
+
+Shake effect in Vanilla CSS and jquery.
+
+#Online Demo can be found at:
+
+https://ajaxblog.herokuapp.com/

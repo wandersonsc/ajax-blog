@@ -5,5 +5,7 @@
 <% else %>
 
 	$(".error-wraper").html("<%= j render "form_error", post: @post %>")
+	$("#post_comment").focus()
+	$("#post_comment").addClass("error-alert")
 
 <% end  %>

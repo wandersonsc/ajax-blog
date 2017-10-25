@@ -13,3 +13,27 @@
  *= require_tree .
  *= require_self
  */
+
+ .html, body{
+ 	background: #f4f4f4
+ }
+
+
+.error-alert{
+	position: relative;
+	border: 3px solid #c00;
+	animation: shake 0.2s;
+
+}
+
+@keyframes shake{
+	0%, 100%{
+		left: 0px;		
+	}
+	20%, 80%{
+		left: -15px;		
+	}
+	40%, 60%{
+		left: 15px;		
+	}
+}
