@@ -15,14 +15,29 @@
  */
 
  .html, body{
- 	min-height: 80vh;
- 	color: #282e34;
- 	background: #f4f4f4
+/* 	min-height: 90vh;
+*/ 	color: #282e34;
+ 	/*background: #f4f4f4;*/
+ 	background-color: #ececec;
+
  }
 
  .container{
- 	width: 60%;
+ 	min-width: 60%;
+ 	height: 90vh;
+ 	border: 2px solid pink;
  }
+
+.navbar{
+	display: flex;
+	justify-content: center;
+}
+
+.navbar, h2{
+	color: coral;
+	font-size: 1.3em;
+	letter-spacing: 0.2em;
+}
 
 #post_comment{
 	
@@ -31,6 +46,7 @@
 .actions{
 	padding-top: 30px;
 }
+
 
 .btn{
 
@@ -41,23 +57,85 @@
 	background-color: #FFF;
 	letter-spacing: 0.3em;
 	text-transform: uppercase;
+	text-decoration: none;
 	text-align: center;
-	line-height: 18px;
-	padding: 10px 20px;
+	font-weight: 700;
+	line-height: 12px;
+	padding: 15px 14px;
 	border-radius: 8px;
 	cursor: pointer;
 }
 
-
+.btn:hover{
+	color:#FFF;
+	background-color: #4CAF50;
+	opacity: 0.5;
+}
 .new{
+
 	color: inherit;
 	text-decoration: none;
 }
 
 .new:hover{
-	background-color: #FFF;
-	color:#4CAF50;
+	background-color: #4CAF50;
+	opacity: 0.5;
 }
+
+.show{
+	color: #F26798;
+	border: 1px solid #F26798;
+	font-size: 0.8em;
+	padding: 8px 14px;
+	box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.4);
+}
+
+.show:hover{
+	background-color: #F26798;
+	opacity: 0.5;
+}
+
+.edit{
+
+	color: #3CF;
+	border: 1px solid #3CF;
+	font-size: 0.8em;
+	padding: 8px 14px;
+	box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.4);
+}	
+
+.edit:hover{
+	background-color: #3CF;
+	opacity: 0.5;
+}
+
+.delete{
+	color: #DC4A38;
+	border: 1px solid #DC4A38;
+	font-size: 0.8em;
+	padding: 8px 14px;
+	box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.4);
+}
+
+.delete:hover{
+	background-color: #DC4A38;
+	opacity: 0.5;
+}
+
+
+.line, td{
+
+	height: 40px;
+}
+
+.text{
+	font-size: 1.3em;
+}
+
+	
+
+
+
 
 .error_explanation, li{
 	letter-spacing: 0.1em;
