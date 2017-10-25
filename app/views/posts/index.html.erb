@@ -9,7 +9,7 @@
     </tr>
   </thead>
 
-  <tbody class="show-post">
+  <tbody class="showPost">
     <% @posts.each do |post| %>
 
       <%= render "form_post", post: post%>
@@ -20,4 +20,4 @@
 
 <br>
 
-<%= link_to 'New Post', new_post_path, id: :new_link, remote: true %>
+<%= link_to 'New Post', new_post_path, id: :new_link, remote: true, class: "btn new" %>

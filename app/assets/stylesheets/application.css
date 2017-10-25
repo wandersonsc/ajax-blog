@@ -15,11 +15,56 @@
  */
 
  .html, body{
+ 	min-height: 80vh;
+ 	color: #282e34;
  	background: #f4f4f4
  }
 
+ .container{
+ 	width: 60%;
+ }
 
+#post_comment{
+	
+	box-shadow: 0px 20px 17px -5px rgba(0,0,0,0.4);
+}
+.actions{
+	padding-top: 30px;
+}
+
+.btn{
+
+	font-size: 1.2em;
+/*	background: #4CAF50;*/
+	border: 1px solid #4CAF50;
+	color: #4CAF50;
+	background-color: #FFF;
+	letter-spacing: 0.3em;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 18px;
+	padding: 10px 20px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+
+.new{
+	color: inherit;
+	text-decoration: none;
+}
+
+.new:hover{
+	background-color: #FFF;
+	color:#4CAF50;
+}
+
+.error_explanation, li{
+	letter-spacing: 0.1em;
+
+}
 .error-alert{
+
 	position: relative;
 	border: 3px solid #c00;
 	animation: shake 0.2s;

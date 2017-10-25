@@ -1,11 +1,20 @@
 <% if @post.valid? %>
 
-	$(".show-post").append("<%= j render "form_post", post: @post %>")
+	$(".showPost").append("<%= j render "form_post", post: @post %>")
+	$("form").fadeOut(300)
 
 <% else %>
 
-	$(".error-wraper").html("<%= j render "form_error", post: @post %>")
-	$("#post_comment").focus()
+	$(".error-wrapper").html("<%= j render "form_error", post: @post %>")	
 	$("#post_comment").addClass("error-alert")
+	$(".btn").click(function(){
+		$("#post_comment").addClass("error-alert")
+		if ($("#post_comment").hasClass("error-alert")){
+			$("#post_comment").removeClass("error-alert")
+		}
+
+	})
+
+	
 
 <% end  %>

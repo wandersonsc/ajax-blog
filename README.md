@@ -4,7 +4,7 @@
 ## Ajaxify your site with remote => true using Rails 5.1 
 
 ## Vanilla CSS & Jquery
-
+### Shake effect in Vanilla CSS and jquery.
 
 
 
@@ -19,11 +19,7 @@
 
 
 
-Don't fogert to remove the line ```ruby
- (local: true)
-
-``` from the form_with.
-
+Don't fogert to remove the line (local: true) from the form_with as shown below:
 
 ```ruby
 <%= form_with(model: post, local: true) do |form| %>
@@ -31,8 +27,7 @@ Don't fogert to remove the line ```ruby
 ```
 
 
-Shake effect in Vanilla CSS and jquery.
 
-#Online Demo can be found at:
+# Online Demo can be found at:
 
 https://ajaxblog.herokuapp.com/
