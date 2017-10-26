@@ -5,7 +5,7 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
-    # flash[:notice] = "Site and relax! "
+    # flash[:notice] = "Sit and relax! "
   end
 
   # GET /posts/1
@@ -31,8 +31,8 @@ class PostsController < ApplicationController
       if @post.save
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
-      format.js { flash[:notice] = 'Post was successfully created.' }
-        
+      # format.js { flash[:notice] = 'Post was successfully created.' }
+        format.js
       else
         format.html { render :new }
         format.json { render json: @post.errors, status: :unprocessable_entity }
@@ -48,8 +48,7 @@ class PostsController < ApplicationController
       if @post.update(post_params)
         format.html { redirect_to @post, notice: 'Post was successfully updated.' }
         format.json { render :show, status: :ok, location: @post }
-        format.js 
-        
+        format.js         
       else
         format.html { render :edit }
         format.json { render json: @post.errors, status: :unprocessable_entity }
@@ -65,7 +64,7 @@ class PostsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
       format.json { head :no_content }
-      format.js { flash[:notice] = "Post was successfully destroyed"}
+      format.js 
     end
   end
 

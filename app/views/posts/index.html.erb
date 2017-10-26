@@ -3,14 +3,14 @@
 <!-- <h1>Posts</h1> -->
 
 <section class="section">
-  <div class="showPost">
-    <% @posts.each do |post| %>
+  	<div class="showPost">
+    	<% @posts.each do |post| %>
 
-      <%= render "form_post", post: post %>
+      		<%= render "form_post", post: post %>
      
-    <% end %>
-</div>
-  </section>
-<br>
+    	<% end %>
+	</div>
+</section>
+ <br>
 
 <%= link_to 'New Post', new_post_path, id: :new_link, remote: true, class: "btn new" %>
