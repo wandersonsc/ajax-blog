@@ -2,3 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+.alert{
+	width: 100%;
+	background-color: #ffd0ce;
+	color: #065a69;
+	font-size: 1.5em;
+	letter-spacing: 0.3em;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	line-height: 2em;
+	border-radius: 6px;
+	box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.4);
+
+}

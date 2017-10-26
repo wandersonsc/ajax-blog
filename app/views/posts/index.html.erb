@@ -1,22 +1,16 @@
 <% @pageTitle = " Let's talk!  "%>
-<h1>Posts</h1>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Comment</th>
-        <th colspan="3"></th>
-      </tr>
-    </thead>
+<!-- <h1>Posts</h1> -->
 
-    <tbody class="showPost">
-      <% @posts.each do |post| %>
+<section class="section">
+  <div class="showPost">
+    <% @posts.each do |post| %>
 
-        <%= render "form_post", post: post%>
-        
-      <% end %>
-    </tbody>
-  </table>
+      <%= render "form_post", post: post %>
+     
+    <% end %>
+</div>
+  </section>
 <br>
 
 <%= link_to 'New Post', new_post_path, id: :new_link, remote: true, class: "btn new" %>

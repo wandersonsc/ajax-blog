@@ -14,3 +14,9 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+
+
+// $(document).on("turbolinks:load", function() {
+// 	$(".flash_wrapper").delay(2000).slideUp(500);
+// })
+
