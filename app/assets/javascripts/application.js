@@ -20,4 +20,7 @@
 // 	$(".flash_wrapper").delay(2000).slideUp(500);
 // })
 
-$(".flash_wrapper").delay(2000).slideUp(500);
+
+ $( window ).on( "load", function() {
+        $(".notice").remove();
+ });

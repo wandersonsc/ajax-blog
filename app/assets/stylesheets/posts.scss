@@ -29,6 +29,7 @@ body{
 .navbar{
 /*	flex-basis: 20%;
 */
+
 }
 
 .navbar, h2{
@@ -56,7 +57,7 @@ body{
 	border: 1px solid #4CAF50;
 	color: #4CAF50;
 	background-color: #FFF;
-	letter-spacing: 0.3em;
+	letter-spacing: 0.2em;
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
@@ -92,7 +93,7 @@ body{
 	border: 1px solid #F26798;
 	font-size: 0.8em;
 	padding: 8px 14px;
-	box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.4);
+	
 }
 
 .show:hover{
@@ -101,12 +102,10 @@ body{
 }
 
 .edit{
-
 	color: #3CF;
 	border: 1px solid #3CF;
 	font-size: 0.8em;
 	padding: 8px 14px;
-	box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.4);
 }	
 
 .edit:hover{
@@ -119,7 +118,6 @@ body{
 	border: 1px solid #DC4A38;
 	font-size: 0.8em;
 	padding: 8px 14px;
-	box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.4);
 }
 
 .delete:hover{
@@ -129,6 +127,7 @@ body{
 
 
 .fix-btn{
+
 	flex: -1;
 }
 
@@ -141,7 +140,7 @@ body{
 .posts{
 	width: 300px;
 	margin-top: 10px;
-	height: 80px;
+	height: 60px;
 	/*border: 1px solid #DC4A38;*/
 
 }
@@ -245,3 +244,8 @@ body{
 
 }
 
+
+.trash{
+	font-size: 1.3em;
+	color: red;
+}
