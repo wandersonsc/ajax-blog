@@ -3,22 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-
-
-.alert{
-	width: 100%;
-	background-color: #ffd0ce;
-	color: #065a69;
-	font-size: 1.5em;
-	letter-spacing: 0.3em;
-	font-family: 'Raleway', sans-serif;
-	text-align: center;
-	line-height: 2em;
-	border-radius: 6px;
-	box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.4);
-
-}
-
 html{
 	height: 100%;
 }
@@ -31,9 +15,10 @@ body{
 
 .container{
 	flex: 1 0 auto;
+	margin-left: 60px;
+	margin-right: 60px;
 	
 }
-
 
 
 .section{
@@ -68,7 +53,6 @@ body{
 .btn{
 
 	font-size: 1.2em;
-/*	background: #4CAF50;*/
 	border: 1px solid #4CAF50;
 	color: #4CAF50;
 	background-color: #FFF;
@@ -82,18 +66,20 @@ body{
 	border-radius: 8px;
 	cursor: pointer;
 	box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.4);
-
+	
 }
 
 .btn:hover{
-	color:#FFF;
-	background-color: #4CAF50;
-	opacity: 0.5;
-}
+		color:#FFF;
+		background-color: #4CAF50;
+		opacity: 0.5;
+	}
+
 .new{
 
 	color: inherit;
 	text-decoration: none;
+
 }
 
 .new:hover{
@@ -142,24 +128,35 @@ body{
 }
 
 
-/* Styling Post */
-.posts{
-
-	margin-top: 10px;
-	height: 80px;
-/*	border: 1px solid #DC4A38;
-*/
+.fix-btn{
+	flex: -1;
 }
 
-.text{
+.btn-wrapper{
+	margin-top: 60px;
+}
+
+
+/* Styling Post */
+.posts{
+	margin-top: 10px;
+	height: 60px;
+	/*border: 1px solid #DC4A38;*/
+
+}
+
+.comments p{
+	/*margin-right: 12px;*/
+	line-height: 0.2em;
 	font-family: 'Crimson Text', serif;
-	font-size: 1.6em;
+	font-size: 1.9em;
 }
 
 
 /* Add the vanilla css shakke effect  */
 
 .error_explanation, li{
+
 	letter-spacing: 0.1em;
 
 }
@@ -221,9 +218,24 @@ body{
 
 /* Alert */
 
-
-.alert{
+/*.alert{
 	font-size: 1.6em;
 	font-family: 'Raleway', sans-serif;
 
+}*/
+
+
+.alert{
+	width: 100%;
+	background-color: #ffd0ce;
+	color: #065a69;
+	font-size: 1.5em;
+	letter-spacing: 0.3em;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	line-height: 2em;
+	border-radius: 6px;
+	box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.4);
+
 }
+

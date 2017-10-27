@@ -1,9 +1,13 @@
 <div id="comment_<%= post.id %>">
 	<div class="posts">
-		<span class="text"><%= post.comment %></span>
-	   	<%= link_to 'Show', post, class: "btn show" %>
-	    <%= link_to 'Edit', edit_post_path(post), class: "btn edit" %>
-	    <%= link_to '&times;'.html_safe, post, method: :delete, data: { confirm: 'Are you sure?' } , class: "btn delete", remote: true %>
+		<div class="comments">	   	
+        	 <p> <%= post.comment %> </p>         	
+         </div>
+	   	<div class="fix-btn">
+		   	<%= link_to 'Show', post, class: "btn show" %>
+		    <%= link_to 'Edit', edit_post_path(post), class: "btn edit" %>
+		    <%= link_to '&times;'.html_safe, post, method: :delete, data: { confirm: 'Are you sure?' } , class: "btn delete", remote: true %>
+    	</div>
     </div>
 
 </div>
