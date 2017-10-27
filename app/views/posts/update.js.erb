@@ -1,0 +1,23 @@
+<% if @post.valid? %>
+
+	$("#comment_<%= @post.id %>").remove();
+	$('form').hide();
+	$(".showPost").append("<%= j render "form_post", post: @post %>")
+	$("#post_comment").slideUp(300)
+	$(".btn").show()
+	// $(".flash_wrapper").html("<%= j render "shared/messages" %>");
+	// $(".flash_wrapper").delay(2000).slideUp(500);
+
+<% else %>
+
+	$(".error-wrapper").html("<%= j render "form_error", post: @post %>")	
+	$("#post_comment").addClass("error-alert")
+	$(".btn").click(function(){
+		$("#post_comment").addClass("error-alert")
+		if ($("#post_comment").hasClass("error-alert")){
+			$("#post_comment").removeClass("error-alert")
+		}
+
+	})
+
+<% end  %>

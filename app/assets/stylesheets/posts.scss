@@ -139,17 +139,23 @@ body{
 
 /* Styling Post */
 .posts{
+	width: 300px;
 	margin-top: 10px;
-	height: 60px;
+	height: 80px;
 	/*border: 1px solid #DC4A38;*/
 
 }
 
 .comments p{
-	/*margin-right: 12px;*/
 	line-height: 0.2em;
 	font-family: 'Crimson Text', serif;
 	font-size: 1.9em;
+
+}
+
+
+#post_comment{
+	font-size: 1.2em;
 }
 
 
