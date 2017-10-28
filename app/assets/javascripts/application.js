@@ -16,11 +16,7 @@
 //= require_tree .
 
 
-// $(document).on("turbolinks:load", function() {
-// 	$(".flash_wrapper").delay(2000).slideUp(500);
-// })
 
-
- $( window ).on( "load", function() {
-        $(".notice").remove();
+ $(window).on("load", function() {
+    $(".notice").remove();
  });

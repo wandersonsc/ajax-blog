@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= @pageTitle || "Learning Ajax" %></title>
+    <title><%= @pageTitle || "Ajax Blog" %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Raleway" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Raleway" rel="stylesheet">    
 
   </head>
 
   <body>
+
   	<div class="container">
-    	<header class="flash_wrapper">
+      <header class="flash_wrapper">
+
     		<%= render "shared/messages" %>
     	</header>
-    	<nav class="navbar">
+      <nav class="navbar">
     		  <h2> AJAX & Rails 5.1 </h2>
     	</nav>
 

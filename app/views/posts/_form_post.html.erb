@@ -3,10 +3,11 @@
 		<div class="comments">	   	
         	 <p> <%= post.comment %> </p>         	
          </div>
-	   	<div class="fix-btn">
+	   	<div class="form-group">
 		   	<%= link_to 'Show', post, class: "btn show" %>
 		    <%= link_to 'Edit', edit_post_path(post), class: "btn edit", remote: true %>
-		    <%= link_to '&times;'.html_safe, post, method: :delete, data: { confirm: 'Are you sure?' } , class: "btn delete", remote: true %>
+
+		   	<%= link_to 'delete', post, method: :delete, data: { confirm: 'Are you sure?' } , class: "btn delete", remote: true %>
 
     	</div>
     </div>
