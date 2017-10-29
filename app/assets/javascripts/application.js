@@ -20,3 +20,4 @@
  $(window).on("load", function() {
     $(".notice").remove();
  });
+

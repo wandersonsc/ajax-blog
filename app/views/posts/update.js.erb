@@ -10,7 +10,7 @@
 
 <% else %>
 
-	$(".error-wrapper").htSml("<%= j render "form_error", post: @post %>");
+	$(".error-wrapper").html("<%= j render "form_error", post: @post %>");
 	$("#post_comment").addClass("error-alert")
 	$(".btn").click(function(){
 		$("#post_comment").addClass("error-alert");
